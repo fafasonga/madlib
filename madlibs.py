@@ -19,7 +19,7 @@ def addPick(cue, dictionary):
     '''Prompt for a user response using the cue string,
     and place the cue-response pair in the dictionary.
     '''
-    promptFormat = "Enter a specific example for {name}: "
+    promptFormat = "\nEnter {name}: "
     prompt = promptFormat.format(name=cue)
     response = input(prompt)
     dictionary[cue] = response                                                             
